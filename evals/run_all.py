@@ -1,8 +1,8 @@
 """Run every eval, save results to evals/results/, and rewrite the README table.
 
-    python evals/run_all.py            # run everything (about a minute)
-    python evals/run_all.py --check    # CI: fail if README doesn't match results/
-    python evals/run_all.py --fast     # CI: re-measure gold + accuracy + attacks only
+python evals/run_all.py            # run everything (about a minute)
+python evals/run_all.py --check    # CI: fail if README doesn't match results/
+python evals/run_all.py --fast     # CI: re-measure gold + accuracy + attacks only
 """
 
 from __future__ import annotations

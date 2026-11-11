@@ -74,7 +74,7 @@ def _parse_ts(text: str) -> datetime | None:
 def _is_garbage(text: str) -> bool:
     if not text:
         return False
-    bad = sum(1 for ch in text if ch == "�" or (ord(ch) < 32 and ch != "\t"))
+    bad = sum(1 for ch in text if ch == "\ufffd" or (ord(ch) < 32 and ch != "\t"))
     return bad / len(text) > GARBAGE_RATIO
 
 
@@ -165,7 +165,7 @@ def parse_lines(lines: Iterable[RawLine]) -> Iterator[Parsed]:
 
         text = raw.data.decode("utf-8", errors="replace")
         if raw.line_no == 1:
-            text = text.removeprefix("﻿")  # byte-order mark some editors add
+            text = text.removeprefix("\ufeff")  # byte-order mark some editors add
 
         if not text.strip():
             yield Blank(raw.line_no)
@@ -194,7 +194,7 @@ def parse_lines(lines: Iterable[RawLine]) -> Iterator[Parsed]:
             yield result
             continue
 
-        bad_bytes = "�" in text
+        bad_bytes = "\ufffd" in text
         for entry in result:
             entry.had_bad_bytes = bad_bytes
             last_entry = entry

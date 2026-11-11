@@ -215,7 +215,7 @@ MD_PAYLOADS = [
 for i, payload in enumerate(MD_PAYLOADS):
     CASES.append(("Markdown report injection", f"md_{i}", lambda p, x=payload: message_payload(p, x), "markdown", "escape_output"))
 
-TERM_PAYLOADS = ["\x1b]0;pwned\x07", "\x1b[2J\x1b[H all clear", "\x1b[8m hidden", "invoice‮gnp.exe"]
+TERM_PAYLOADS = ["\x1b]0;pwned\x07", "\x1b[2J\x1b[H all clear", "\x1b[8m hidden", "invoice\u202egnp.exe"]
 for i, payload in enumerate(TERM_PAYLOADS):
     CASES.append(("terminal escape injection", f"term_{i}", lambda p, x=payload: message_payload(p, x), "terminal", "escape_output"))
 
@@ -241,7 +241,7 @@ def _worker(path: str, options_json: str) -> None:
                 "spikes": len(a.spikes),
                 "html": html_injected(html),
                 "markdown": markdown_injected(md),
-                "terminal": "\x1b" in term or "‮" in term,
+                "terminal": "\x1b" in term or "\u202e" in term,
                 "rss_mb": round(rss_mb, 1),
             }
         )

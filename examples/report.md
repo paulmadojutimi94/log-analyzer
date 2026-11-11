@@ -13,7 +13,7 @@
 | Recovered (JSON lines, glued lines) | 21, 28 |
 | Entries with unreadable bytes | 30 |
 | Stack-trace lines attached | 580 |
-| Analysis time | 0.086 s |
+| Analysis time | 0.077 s |
 
 ## Levels
 

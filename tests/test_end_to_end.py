@@ -40,13 +40,13 @@ def test_cli_missing_file_and_fail_on_spike(tmp_path):
 
 def test_hostile_messages_are_neutralised(tmp_path):
     log = tmp_path / "evil.log"
-    evil = ["<script>alert(1)</script>", "[x](javascript:alert(1))", "\x1b]0;pwned\x07", "a | b", "rtl‮txt"]
+    evil = ["<script>alert(1)</script>", "[x](javascript:alert(1))", "\x1b]0;pwned\x07", "a | b", "rtl\u202etxt"]
     log.write_text("\n".join(f"2026-11-11T09:00:0{i}Z ERROR [api] {m}" for i, m in enumerate(evil)) + "\n")
     a = analyze(log)
     html, markdown, term = render_html(a), render_markdown(a), render_terminal(a)
     assert "<script>" not in html and "&lt;script&gt;" in html
     assert "](javascript" not in markdown and "\\|" in markdown
-    assert "\x1b" not in term and "‮" not in term
+    assert "\x1b" not in term and "\u202e" not in term
 
 
 def test_clean_and_md_helpers():

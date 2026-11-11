@@ -15,6 +15,8 @@ jobs:
       - run: pip install pytest ruff
       - name: Lint
         run: ruff check . && ruff format --check .
+      - name: No invisible or bidi characters in code or docs (see docs/POSTMORTEM.md)
+        run: python scripts/check_invisible_chars.py
       - name: Tests
         run: python -m pytest -q
       - name: Re-measure accuracy, gold set and attacks

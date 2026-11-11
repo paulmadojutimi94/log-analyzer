@@ -275,7 +275,7 @@
         {
           "id": "one_line_150mb",
           "success": true,
-          "detail": "peak memory 623.9 MB"
+          "detail": "peak memory 623.8 MB"
         },
         {
           "id": "400_lines_of_1mb",

@@ -147,7 +147,7 @@ How to read it:
 - **Impact.** Every unit-suffixed number made a new group, so the biggest problem in the log was smeared across dozens of small piles and dropped down the ranking. Spike blame went to whichever unbroken group happened to be largest.
 - **Fix and guard.** `\d+(?:\.\d+)?` with no boundaries. Recall went 0.68 → 0.97, groups 138 → 14 per file, spike blame 83% → 100%. Unit tests now pin `5012ms`, `sda1` and friends.
 
-It also covers a regex that hung the tool on 200 hostile lines (12 s → 0.001 s), an attack judge that cried wolf, a crash found by a unit test that the attack eval missed, and the spike detector's redesign.
+It also covers a regex that hung the tool on 200 hostile lines (12 s → 0.001 s), an attack judge that cried wolf, a crash found by a unit test that the attack eval missed, invisible characters in our own source (and a CI check that could never fail), and the spike detector's redesign.
 
 ## Next steps
 
@@ -171,8 +171,9 @@ It also covers a regex that hung the tool on 200 hostile lines (12 s → 0.001 s
 | `docs/POSTMORTEM.md` | What went wrong and how it was found |
 | `docs/CHEATSHEET.md` | Every line of the code explained, for technical interviews |
 | `docs/LEARN.md` | File handling, regex and data processing, taught through this code, with exercises |
-| `docs/DEMO.md`, `docs/demo/` | The 3-minute video and its narration script |
-| `.github/workflows/ci.yml` | On every push: lint, tests, re-measured evals, README check, demo run |
+| `docs/DEMO.md`, `docs/demo/` | The 3-minute video, its timed narration script, and `make_video.py`, which rebuilds it from real outputs |
+| `scripts/check_invisible_chars.py` | CI guard against invisible and right-to-left characters in code and docs |
+| `.github/workflows/ci.yml` | On every push: lint, invisible-character check, tests, re-measured evals, README check, demo run |
 | `CLAUDE.md` | The guide for AI agents working in this repo |
 
 MIT-licensed.
