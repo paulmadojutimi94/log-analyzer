@@ -1,0 +1,419 @@
+{
+  "cases": [
+    {
+      "family": "log forging (\\r)",
+      "id": "cr_single",
+      "success": false,
+      "detail": "groups=0 spikes=0",
+      "defence": "binary_split"
+    },
+    {
+      "family": "log forging (\\r)",
+      "id": "cr_burst_fake_spike",
+      "success": false,
+      "detail": "groups=0 spikes=0",
+      "defence": "binary_split"
+    },
+    {
+      "family": "log forging (\\r)",
+      "id": "cr_crlf",
+      "success": false,
+      "detail": "groups=0 spikes=0",
+      "defence": "binary_split"
+    },
+    {
+      "family": "log forging (embedded line)",
+      "id": "embedded_single",
+      "success": false,
+      "detail": "groups=0 spikes=0",
+      "defence": "trust_recovered"
+    },
+    {
+      "family": "log forging (embedded line)",
+      "id": "embedded_burst_fake_spike",
+      "success": false,
+      "detail": "groups=0 spikes=0",
+      "defence": "trust_recovered"
+    },
+    {
+      "family": "log forging (embedded line)",
+      "id": "embedded_tabs",
+      "success": false,
+      "detail": "groups=0 spikes=0",
+      "defence": "trust_recovered"
+    },
+    {
+      "family": "oversized lines",
+      "id": "one_line_150mb",
+      "success": false,
+      "detail": "peak memory 29.2 MB",
+      "defence": "max_line_bytes"
+    },
+    {
+      "family": "oversized lines",
+      "id": "400_lines_of_1mb",
+      "success": false,
+      "detail": "peak memory 28.6 MB",
+      "defence": "max_line_bytes"
+    },
+    {
+      "family": "slow regex",
+      "id": "email_mask_quadratic_200x8kb",
+      "success": false,
+      "detail": "peak memory 28.6 MB",
+      "defence": "max_line_bytes"
+    },
+    {
+      "family": "slow regex",
+      "id": "email_mask_quadratic_20x200kb",
+      "success": false,
+      "detail": "peak memory 31.5 MB",
+      "defence": "max_line_bytes"
+    },
+    {
+      "family": "slow regex",
+      "id": "glued_recursion_5000",
+      "success": false,
+      "detail": "peak memory 31.5 MB",
+      "defence": "max_line_bytes"
+    },
+    {
+      "family": "group explosion",
+      "id": "200k_unique_errors",
+      "success": false,
+      "detail": "2001 groups, 31.8 MB",
+      "defence": "max_groups"
+    },
+    {
+      "family": "clock skew",
+      "id": "year_9999",
+      "success": false,
+      "detail": "peak memory 31.8 MB",
+      "defence": "max_timeline_minutes"
+    },
+    {
+      "family": "clock skew",
+      "id": "year_0001",
+      "success": false,
+      "detail": "peak memory 31.8 MB",
+      "defence": "max_timeline_minutes"
+    },
+    {
+      "family": "parser crash",
+      "id": "nested_json_1600",
+      "success": false,
+      "detail": "peak memory 31.8 MB",
+      "defence": null
+    },
+    {
+      "family": "parser crash",
+      "id": "nested_json_100k",
+      "success": false,
+      "detail": "peak memory 31.8 MB",
+      "defence": null
+    },
+    {
+      "family": "HTML report injection",
+      "id": "html_0",
+      "success": false,
+      "detail": "html",
+      "defence": "escape_output"
+    },
+    {
+      "family": "HTML report injection",
+      "id": "html_1",
+      "success": false,
+      "detail": "html",
+      "defence": "escape_output"
+    },
+    {
+      "family": "HTML report injection",
+      "id": "html_2",
+      "success": false,
+      "detail": "html",
+      "defence": "escape_output"
+    },
+    {
+      "family": "HTML report injection",
+      "id": "html_3",
+      "success": false,
+      "detail": "html",
+      "defence": "escape_output"
+    },
+    {
+      "family": "HTML report injection",
+      "id": "html_4",
+      "success": false,
+      "detail": "html",
+      "defence": "escape_output"
+    },
+    {
+      "family": "HTML report injection",
+      "id": "html_5",
+      "success": false,
+      "detail": "html",
+      "defence": "escape_output"
+    },
+    {
+      "family": "HTML report injection",
+      "id": "html_malformed_line",
+      "success": false,
+      "detail": "html",
+      "defence": "escape_output"
+    },
+    {
+      "family": "Markdown report injection",
+      "id": "md_0",
+      "success": false,
+      "detail": "markdown",
+      "defence": "escape_output"
+    },
+    {
+      "family": "Markdown report injection",
+      "id": "md_1",
+      "success": false,
+      "detail": "markdown",
+      "defence": "escape_output"
+    },
+    {
+      "family": "Markdown report injection",
+      "id": "md_2",
+      "success": false,
+      "detail": "markdown",
+      "defence": "escape_output"
+    },
+    {
+      "family": "Markdown report injection",
+      "id": "md_3",
+      "success": false,
+      "detail": "markdown",
+      "defence": "escape_output"
+    },
+    {
+      "family": "Markdown report injection",
+      "id": "md_4",
+      "success": false,
+      "detail": "markdown",
+      "defence": "escape_output"
+    },
+    {
+      "family": "terminal escape injection",
+      "id": "term_0",
+      "success": false,
+      "detail": "terminal",
+      "defence": "escape_output"
+    },
+    {
+      "family": "terminal escape injection",
+      "id": "term_1",
+      "success": false,
+      "detail": "terminal",
+      "defence": "escape_output"
+    },
+    {
+      "family": "terminal escape injection",
+      "id": "term_2",
+      "success": false,
+      "detail": "terminal",
+      "defence": "escape_output"
+    },
+    {
+      "family": "terminal escape injection",
+      "id": "term_3",
+      "success": false,
+      "detail": "terminal",
+      "defence": "escape_output"
+    }
+  ],
+  "ablation": {
+    "binary_split": {
+      "successes": 3,
+      "cases": 3,
+      "detail": [
+        {
+          "id": "cr_single",
+          "success": true,
+          "detail": "groups=1 spikes=0"
+        },
+        {
+          "id": "cr_burst_fake_spike",
+          "success": true,
+          "detail": "groups=1 spikes=1"
+        },
+        {
+          "id": "cr_crlf",
+          "success": true,
+          "detail": "groups=1 spikes=0"
+        }
+      ]
+    },
+    "trust_recovered": {
+      "successes": 3,
+      "cases": 3,
+      "detail": [
+        {
+          "id": "embedded_single",
+          "success": true,
+          "detail": "groups=1 spikes=0"
+        },
+        {
+          "id": "embedded_burst_fake_spike",
+          "success": true,
+          "detail": "groups=1 spikes=1"
+        },
+        {
+          "id": "embedded_tabs",
+          "success": true,
+          "detail": "groups=1 spikes=0"
+        }
+      ]
+    },
+    "max_line_bytes": {
+      "successes": 3,
+      "cases": 5,
+      "detail": [
+        {
+          "id": "one_line_150mb",
+          "success": true,
+          "detail": "peak memory 623.9 MB"
+        },
+        {
+          "id": "400_lines_of_1mb",
+          "success": true,
+          "detail": "hung > 10s"
+        },
+        {
+          "id": "email_mask_quadratic_200x8kb",
+          "success": false,
+          "detail": "peak memory 31.8 MB"
+        },
+        {
+          "id": "email_mask_quadratic_20x200kb",
+          "success": false,
+          "detail": "peak memory 31.8 MB"
+        },
+        {
+          "id": "glued_recursion_5000",
+          "success": true,
+          "detail": "crashed: RecursionError: maximum recursion depth exceeded"
+        }
+      ]
+    },
+    "max_groups": {
+      "successes": 1,
+      "cases": 1,
+      "detail": [
+        {
+          "id": "200k_unique_errors",
+          "success": true,
+          "detail": "200000 groups, 292.4 MB"
+        }
+      ]
+    },
+    "max_timeline_minutes": {
+      "successes": 2,
+      "cases": 2,
+      "detail": [
+        {
+          "id": "year_9999",
+          "success": true,
+          "detail": "crashed: MemoryError"
+        },
+        {
+          "id": "year_0001",
+          "success": true,
+          "detail": "crashed: MemoryError"
+        }
+      ]
+    },
+    "escape_output": {
+      "successes": 16,
+      "cases": 16,
+      "detail": [
+        {
+          "id": "html_0",
+          "success": true,
+          "detail": "html"
+        },
+        {
+          "id": "html_1",
+          "success": true,
+          "detail": "html"
+        },
+        {
+          "id": "html_2",
+          "success": true,
+          "detail": "html"
+        },
+        {
+          "id": "html_3",
+          "success": true,
+          "detail": "html"
+        },
+        {
+          "id": "html_4",
+          "success": true,
+          "detail": "html"
+        },
+        {
+          "id": "html_5",
+          "success": true,
+          "detail": "html"
+        },
+        {
+          "id": "html_malformed_line",
+          "success": true,
+          "detail": "html"
+        },
+        {
+          "id": "md_0",
+          "success": true,
+          "detail": "markdown"
+        },
+        {
+          "id": "md_1",
+          "success": true,
+          "detail": "markdown"
+        },
+        {
+          "id": "md_2",
+          "success": true,
+          "detail": "markdown"
+        },
+        {
+          "id": "md_3",
+          "success": true,
+          "detail": "markdown"
+        },
+        {
+          "id": "md_4",
+          "success": true,
+          "detail": "markdown"
+        },
+        {
+          "id": "term_0",
+          "success": true,
+          "detail": "terminal"
+        },
+        {
+          "id": "term_1",
+          "success": true,
+          "detail": "terminal"
+        },
+        {
+          "id": "term_2",
+          "success": true,
+          "detail": "terminal"
+        },
+        {
+          "id": "term_3",
+          "success": true,
+          "detail": "terminal"
+        }
+      ]
+    }
+  },
+  "total": 32,
+  "successes": 0,
+  "families": 10
+}

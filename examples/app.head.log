@@ -1,0 +1,40 @@
+﻿2026-11-11T09:00:00.605Z DEBUG [payment-service] Query took 14ms: SELECT * FROM products WHERE id = 76679
+2026-11-11T09:00:04.659Z INFO [api-gateway] Order a2955303-a5c5-477f-98af-a26c7d1d53ca created (items=7, total=759.00 EUR)
+2026-11-11T09:00:06.679Z INFO [notification-service] User 28350 logged in from 59.37.142.38
+2026-11-11T09:00:08.641Z INFO [order-service] GET /v1/products/94684 200 65ms
+2026-11-11T09:00:09.339Z INFO [auth-service] POST /v1/cart 201 70ms
+2026-11-11T09:00:10.946Z INFO [notification-service] User 28018 logged in from 233.50.210.152
+2026-11-11T09:00:14.460Z WARN [order-service] Retrying request to payment-provider (attempt 3/3)
+2026-11-11T09:00:15.248Z INFO [api-gateway] User 56509 logged in from 227.179.34.15
+2026-11-11T09:00:20.676Z INFO [payment-service] Health check OK
+2026-11-11T09:00:29.534Z ERROR [notification-service] Email to ana839@example.ie bounced: mailbox full
+2026-11-11T09:00:31.276Z INFO [payment-service] Health check OK
+2026-11-11T09:00:35.217Z DEBUG [inventory-service] Cache lookup key=user:73447:profile hit=true
+2026-11-11T09:00:36.268Z WARN [order-service] Deprecated API /v1/legacy called by client 221.205.241.240
+2026-11-11T09:00:41.923Z INFO [order-service] User 93072 logged in from 226.197.148.142
+2026-11-11T09:00:44.816Z INFO [order-service] POST /v1/cart 201 136ms
+2026-11-11T09:00:45.426Z INFO [notification-service] GET /v1/products/40412 200 29ms
+2026-11-11T09:00:45.614Z INFO [auth-service] Order 9e830948-89eb-44e8-b367-1e1cc354fc52 created (items=3, total=142.00 EUR)
+2026-11-11T09:00:47.569Z WARN [payment-service] Slow query 829ms on table orders
+2026-11-11T09:00:49.333Z INFO [order-service] Order 2589f9f3-983a-4480-95ee-c0c71c8899b2 created (items=1, total=730.00 EUR)
+2026-11-11T09:00:50.629Z INFO [inventory-service] User 28218 logged in from 213.31.178.117
+2026-11-11T09:00:51.800Z DEBUG [payment-service] Query took 4ms: SELECT * FROM products WHERE id = 28663
+2026-11-11T09:00:52.366Z DEBUG [order-service] Cache lookup key=user:57607:profile hit=false
+2026-11-11T09:00:58.739Z INFO [auth-service] Order a8168ddb-3f14-45b2-924e-018319e3086a created (items=6, total=732.00 EUR)
+2026-11-11T09:01:06.016Z INFO [order-service] User 36298 logged in from 194.45.227.94
+2026-11-11T09:01:06.349Z DEBUG [notification-service] Query took 13ms: SELECT * FROM products WHERE id = 97789
+2026-11-11T09:01:06.897Z DEBUG [order-service] Query took 22ms: SELECT * FROM products WHERE id = 8382
+2026-11-11T09:01:07.913Z WARN [payment-service] Deprecated API /v1/legacy called by client 76.96.125.214
+2026-11-11T09:01:11.189Z INFO [order-service] User 55084 logged in from 33.185.96.248
+2026-11-11T09:01:13.729Z WARN [notification-service] Retrying request to payment-provider (attempt 2/3)
+2026-11-11T09:01:22.362Z DEBUG [payment-service] Cache lookup key=user:49904:profile hit=false
+2026-11-11T09:01:26.810Z INFO [order-service] GET /v1/products/23534 200 110ms
+2026-11-11T09:01:31.007Z INFO [order-service] User 12057 logged in from 86.160.78.172
+2026-11-11T09:01:34.624Z INFO [auth-service] Health check OK
+2026-11-11T09:01:36.138Z INFO [inventory-service] GET /v1/products/96170 200 194ms
+2026-11-11T09:01:36.311Z INFO [api-gateway] POST /v1/cart 201 265ms
+2026-11-11T09:01:43.926Z INFO [payment-service] User 55848 logged in from 56.46.149.64
+2026-11-11T09:01:46.186Z WARN [auth-service] Retrying request to payment-provider (attempt 3/3)
+
+2026-11-11T09:01:46.568Z DEBUG [auth-service] Query took 24ms: SELECT * FROM products WHERE id = 31956
+2026-11-11T09:01:49.790Z INFO [api-gateway] Health check OK

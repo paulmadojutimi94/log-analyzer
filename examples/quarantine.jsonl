@@ -1,0 +1,153 @@
+{"line": 70, "reason": "invalid_timestamp", "raw": "2026-13-11T09:02:56.552Z INFO [order-service] Order 3338ec24-9a6a-46a0-8a8f-fd65aed80127 created (items=7, total=407.00 EUR)"}
+{"line": 152, "reason": "no_timestamp", "raw": "11/11/2026 09:06:03 INFO [auth-service] POST /v1/cart 201 174ms"}
+{"line": 156, "reason": "missing_service", "raw": "2026-11-11T09:06:32.539Z WARN order-service Slow query 2128ms on table orders"}
+{"line": 169, "reason": "unknown_level", "raw": "2026-11-11T09:07:15.075Z INF0 [auth-service] User 13008 logged in from 142.150.82.196"}
+{"line": 170, "reason": "missing_service", "raw": "2026-11-11T09:07:16.988Z INFO [i"}
+{"line": 197, "reason": "missing_service", "raw": "2026-11-11T09:08:18.297Z DEBUG api-gateway Cache lookup key=user:17589:profile hit=true"}
+{"line": 228, "reason": "invalid_timestamp", "raw": "2026-13-11T09:09:47.870Z INFO [inventory-service] User 83249 logged in from 241.226.8.59"}
+{"line": 311, "reason": "binary_garbage", "raw": "\u0652\ufffd\ufffd\u0315\ufffd\u00c4\ufffd\u9d07\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u054a\ufffd"}
+{"line": 359, "reason": "missing_service", "raw": "2026-11-11T09:14:45.796Z INFO notification-service POST /v1/cart 201 44ms"}
+{"line": 382, "reason": "unknown_level", "raw": "2026-11-11T09:15:47.731Z INF0 [notification-service] User 61494 logged in from 234.17.61.66"}
+{"line": 415, "reason": "unknown_level", "raw": "2026-11-11T09:16:43.173Z INF0 [auth-service] User 38893 logged in from 159.155.147.193"}
+{"line": 416, "reason": "unknown_level", "raw": "2026-11-11T09:16:44.486Z INF0 [api-gateway] GET /v1/products/35360 200 138ms"}
+{"line": 443, "reason": "binary_garbage", "raw": "\ufffd\ufffd\ufffd\ufffd\u063e\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u04d3\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u051c\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u06fa\u0241\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u3317\ufffd\ufffd\u00e5"}
+{"line": 538, "reason": "unknown_level", "raw": "2026-11-11T09:21:32.961Z INF0 [order-service] GET /v1/products/84597 200 123ms"}
+{"line": 553, "reason": "no_timestamp", "raw": "11/11/2026 09:22:15 INFO [api-gateway] Order 59e6f700-911a-4f39-8561-89d86734086c created (items=2, total=277.00 EUR)"}
+{"line": 756, "reason": "no_timestamp", "raw": "11/11/2026 09:29:42 INFO [payment-service] POST /v1/cart 201 36ms"}
+{"line": 974, "reason": "missing_service", "raw": "2026-11-11T09:37:12.560Z INFO [auth-"}
+{"line": 985, "reason": "unknown_level", "raw": "2026-11-11T09:37:28.727Z INF"}
+{"line": 1140, "reason": "missing_service", "raw": "2026-11-11T09:42:48.157Z INFO [notifi"}
+{"line": 1250, "reason": "invalid_timestamp", "raw": "2026-13-11T09:46:23.001Z INFO [order-service] User 71446 logged in from 25.197.85.65"}
+{"line": 1344, "reason": "invalid_timestamp", "raw": "2026-13-11T09:49:31.885Z INFO [auth-service] Health check OK"}
+{"line": 1442, "reason": "binary_garbage", "raw": "\ufffd\ufffd\ufffd\ufffd\ufffd\u01e2\u05ea\ufffd\udb15\udc70\ufffd\ufffd\ufffd\u03ec\ufffd\ufffd\u057d\u021b\ufffd\ufffd\ufffd\ufffd\ufffd\u034f\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u4624\ufffd\ufffd\ufffd\ufffd\ufffd"}
+{"line": 1521, "reason": "unknown_level", "raw": "2026-11-11T09:55:41.309Z INF0 [notification-service] GET /v1/products/16005 200 67ms"}
+{"line": 1552, "reason": "no_timestamp", "raw": "11/11/2026 09:56:53 INFO [auth-service] Health check OK"}
+{"line": 1590, "reason": "unknown_level", "raw": "2026-11-11T09:57:57.708Z INF0 [auth-service] GET /v1/products/4596 200 211ms"}
+{"line": 1670, "reason": "no_timestamp", "raw": "11/11/2026 10:01:06 DEBUG [notification-service] Query took 22ms: SELECT * FROM products WHERE id = 10448"}
+{"line": 1697, "reason": "missing_service", "raw": "2026-11-11T10:02:10.934Z WARN inventory-service Retrying request to payment-provider (attempt 1/3)"}
+{"line": 1882, "reason": "unknown_level", "raw": "2026-11-11T10:08:31.846Z INF0 [inventory-service] POST /v1/cart 201 45ms"}
+{"line": 2000, "reason": "binary_garbage", "raw": "\ufffd\ufffd\u859e\ufffd\ufffd\ufffd\u02b3\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd"}
+{"line": 2027, "reason": "no_timestamp", "raw": "11/11/2026 10:13:23 INFO [api-gateway] Order a3d0fce2-6e78-4a29-804b-c8fb0acbd88f created (items=7, total=360.00 EUR)"}
+{"line": 2126, "reason": "invalid_timestamp", "raw": "2026-13-11T10:17:19.876Z INFO [api-gateway] Health check OK"}
+{"line": 2129, "reason": "binary_garbage", "raw": "\ufffd\ufffd\ufffd\u0448\ufffd\ufffd\ufffd\ufffd\ufffd\u0357\ufffd\ufffd\ufffd\u28e5\ufffd\u596c\ufffd"}
+{"line": 2157, "reason": "unknown_level", "raw": "2026-11-11T10:18:42.024Z WARNN [api-gateway] Deprecated API /v1/legacy called by client 132.206.101.93"}
+{"line": 2248, "reason": "binary_garbage", "raw": "\ufffd\ufffd\u02e3\u04b9\u0663\ufffd\ufffd\ufffd\u5e17\ufffd\u04b7\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u00fa\u0166\ufffd\u04d9\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u04d1\ufffd\ufffd\ufffd\ufffd\u0f09\ufffd\ufffd\ufffd"}
+{"line": 2263, "reason": "unknown_level", "raw": "2026-11-11T10:23:39.101Z DEBU [order-service] Query took 16ms: SELECT * FROM products WHERE id = 94567"}
+{"line": 2333, "reason": "invalid_timestamp", "raw": "2026-13-11T10:26:24.427Z INFO [api-gateway] GET /v1/products/52720 200 198ms"}
+{"line": 2336, "reason": "unknown_level", "raw": "2026-11-11T10:26:27.950Z INF0 [inventory-service] POST /v1/cart 201 254ms"}
+{"line": 2447, "reason": "missing_service", "raw": "2026-11-11T10:31:12.855Z INFO [api-gat"}
+{"line": 2463, "reason": "missing_level", "raw": "2026-11-11T10:31:43.816Z "}
+{"line": 2591, "reason": "unknown_level", "raw": "2026-11-11T10:36:47.442Z DEBU [order-service] Query took 32ms: SELECT * FROM products WHERE id = 59393"}
+{"line": 2650, "reason": "missing_service", "raw": "2026-11-11T10:37:40.607Z WARN auth-service Retrying request to payment-provider (attempt 1/3)"}
+{"line": 2729, "reason": "no_timestamp", "raw": "11/11/2026 10:38:51 INFO [payment-service] GET /v1/products/29162 200 4ms"}
+{"line": 2743, "reason": "binary_garbage", "raw": "\ufffd\ufffd\u05ab\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u064d\u0524\ufffd\ufffd\ufffd\ufffd\u6f48\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0088\ufffd"}
+{"line": 2776, "reason": "missing_service", "raw": "2026-11-11T10:39:22.852Z INFO inventory-service GET /v1/products/40878 200 124ms"}
+{"line": 2838, "reason": "missing_service", "raw": "2026-11-11T10:40:07.126Z WARN inventory-service Deprecated API /v1/legacy called by client 192.162.241.195"}
+{"line": 3012, "reason": "unknown_level", "raw": "2026-11-11T10:42:16.950Z INF0 [auth-service] GET /v1/products/37149 200 65ms"}
+{"line": 3110, "reason": "invalid_timestamp", "raw": "2026-13-11T10:43:21.424Z INFO [inventory-service] GET /v1/products/27267 200 67ms"}
+{"line": 3309, "reason": "missing_service", "raw": "2026-11-11T10:45:26.092Z INFO api-gateway GET /v1/products/64176 200 120ms"}
+{"line": 3419, "reason": "unknown_level", "raw": "2026-11-11T10:46:44.578Z WARNN [inventory-service] Slow query 1109ms on table orders"}
+{"line": 3464, "reason": "binary_garbage", "raw": "\ufffd\u01d6\ufffd\ufffd\ufffd\u06c5\u0483\ufffd\ufffd\ufffd\ufffd\u03ed\ufffd\ufffd\ufffd\ufffd\ufffd\uda0c\udd6b\ufffd\ufffd\u9de9"}
+{"line": 3474, "reason": "binary_garbage", "raw": "\ufffd\ufffd\ufffd\ufffd\u0358\ue7e7\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u061f\u073b\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd"}
+{"line": 3496, "reason": "missing_service", "raw": "2026-11-11T10:47:38.139Z INFO [o"}
+{"line": 3544, "reason": "unknown_level", "raw": "2026-11-11T10:48:47.663Z INF0 [order-service] User 11263 logged in from 74.212.143.112"}
+{"line": 3559, "reason": "binary_garbage", "raw": "\ufffd\ufffd\ufffd\ufffd\ud8c3\udcc9\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u6980\ufffd\ufffd\ufffd\ufffd\ufffd\udb2d\ude42\ufffd\ufffd\ufffd\u07cd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0345\ufffd\ufffd\ufffd\u0342\ufffd\ufffd\u016d\u06f9\ufffd\ufffd\ufffd\ufffd\ufffd\u00ae\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0742\u0303\ufffd\ufffd"}
+{"line": 3616, "reason": "unknown_level", "raw": "2026-11-11T10:51:32.127Z D"}
+{"line": 3618, "reason": "no_timestamp", "raw": "11/11/2026 10:51:33 INFO [notification-service] Health check OK"}
+{"line": 3769, "reason": "missing_service", "raw": "2026-11-11T10:56:39.684Z WARN ["}
+{"line": 3779, "reason": "invalid_timestamp", "raw": "2026-13-11T10:57:00.897Z INFO [auth-service] Health check OK"}
+{"line": 3826, "reason": "unknown_level", "raw": "2026-11-11T10:59:12.686Z WARNN [payment-service] Deprecated API /v1/legacy called by client 103.44.73.189"}
+{"line": 3885, "reason": "no_timestamp", "raw": "11/11/2026 11:01:18 INFO [notification-service] GET /v1/products/21 200 4ms"}
+{"line": 3887, "reason": "binary_garbage", "raw": "\u10b2\ufffd\u05a4\ufffd\ufffd\ufffd\ufffd\u72ad\ufffd\ufffd\u0772\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u625e\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd"}
+{"line": 3947, "reason": "missing_service", "raw": "2026-11-11T11:03:12.828Z INFO api-gateway POST /v1/cart 201 130ms"}
+{"line": 4011, "reason": "no_timestamp", "raw": "11/11/2026 11:04:58 INFO [auth-service] Health check OK"}
+{"line": 4046, "reason": "binary_garbage", "raw": "\u2a17\ufffd\ufffd\u068c\ufffd\ufffd\u02c5\ufffd\u014d\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u222c\ufffd\u00c9\ufffd\ufffd\u985a\ufffd\ufffd\u0435\u0d6c\ufffd\ufffd\ufffd\ufffd\ufffd\u023c\ufffd\ufffd\u0378\ufffd\u054d\ufffd\ufffd"}
+{"line": 4164, "reason": "unknown_level", "raw": "2026-11-11T11:11:16.180Z INF0 [api-gateway] POST /v1/cart 201 119ms"}
+{"line": 4258, "reason": "binary_garbage", "raw": "\ufffd\ufffd\u06a5\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0088\ufffd\u0402\ufffd\u00ef\ufffd\ufffd\ufffd\u8ef4\ufffd\ufffd\ufffd\ufffd\ufffd\u040c\ufffd\ufffd\ufffd\u0162\ud254\ufffd\ufffd\ufffd\ufffd\u02c7\ufffd\ufffd\ufffd\ufffd\ufffd\u321b\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u04f9\ufffd\ufffd\ufffd\ufffd\u072d\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd"}
+{"line": 4300, "reason": "unknown_level", "raw": "2026-11-11T11:16:36.231Z INF0 [inventory-service] POST /v1/cart 201 84ms"}
+{"line": 4677, "reason": "no_timestamp", "raw": "11/11/2026 11:30:39 DEBUG [inventory-service] Query took 30ms: SELECT * FROM products WHERE id = 2292"}
+{"line": 4714, "reason": "no_timestamp", "raw": "11/11/2026 11:31:31 DEBUG [notification-service] Query took 6ms: SELECT * FROM products WHERE id = 44994"}
+{"line": 4812, "reason": "invalid_timestamp", "raw": "2026-13-11T11:35:15.510Z WARN [auth-service] Deprecated API /v1/legacy called by client 68.72.106.191"}
+{"line": 5095, "reason": "missing_service", "raw": "2026-11-11T11:45:42.295Z INFO [api-gatew"}
+{"line": 5130, "reason": "missing_service", "raw": "2026-11-11T11:47:15.752Z WARN auth-service Retrying request to payment-provider (attempt 3/3)"}
+{"line": 5293, "reason": "missing_level", "raw": "2026-11-11T11:52:08"}
+{"line": 5323, "reason": "binary_garbage", "raw": "\uadd8\ufffd\ufffd\ufffd\ufffd\u01c8\ufffd\ufffd\u8194\uc643\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd"}
+{"line": 5350, "reason": "invalid_timestamp", "raw": "2026-13-11T11:54:23.812Z INFO [api-gateway] User 87344 logged in from 244.34.44.32"}
+{"line": 5447, "reason": "invalid_timestamp", "raw": "2026-13-11T11:58:33.918Z INFO [api-gateway] Order 8ffa1194-c14a-4a61-b58f-b73fb0bde14f created (items=8, total=563.00 EUR)"}
+{"line": 5475, "reason": "missing_service", "raw": "2026-11-11T11:59:36.815Z INFO inventory-service User 92250 logged in from 128.251.136.1"}
+{"line": 5509, "reason": "unknown_level", "raw": "2026-11-11T12:00:24.146Z INF0 [inventory-service] Order c6d575e0-1e18-446b-a3e9-10bfa0c92f46 created (items=4, total=425.00 EUR)"}
+{"line": 5596, "reason": "no_timestamp", "raw": "11/11/2026 12:02:36 INFO [api-gateway] Order 2a3ac5e2-ddf7-4f3e-b127-41a65e9d9433 created (items=3, total=401.00 EUR)"}
+{"line": 5620, "reason": "binary_garbage", "raw": "\ufffd\u03b7\ufffd\ufffd\ufffd\u037f\ufffd\u57bb\ufffd\ufffd\ufffd\ufc5b\ufffd\ufffd\ufffd\ufffd\u5b70\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u075a\ufffd\u071b\ufffd\ufffd\u0145\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u06bb\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ua1ec"}
+{"line": 5702, "reason": "missing_service", "raw": "2026-11-11T12:06:54.454Z INFO api-gateway Order 7bca7185-7620-4721-93a3-c73eaa8107f0 created (items=1, total=853.00 EUR)"}
+{"line": 5703, "reason": "missing_service", "raw": "2026-11-11T12:06:55.103Z WARN inventory-service Retrying request to payment-provider (attempt 2/3)"}
+{"line": 5743, "reason": "invalid_timestamp", "raw": "2026-13-11T12:08:21.635Z INFO [auth-service] User 10648 logged in from 111.20.176.180"}
+{"line": 5811, "reason": "missing_service", "raw": "2026-11-11T12:10:30.975Z WARN notification-service Slow query 507ms on table orders"}
+{"line": 5890, "reason": "missing_level", "raw": "2026-11-11T12:13:56.09"}
+{"line": 5930, "reason": "no_timestamp", "raw": "11/11/2026 12:15:16 WARN [notification-service] Slow query 2853ms on table orders"}
+{"line": 5965, "reason": "missing_service", "raw": "2026-11-11T12:16:39.538Z WARN notification-service Deprecated API /v1/legacy called by client 56.7.52.48"}
+{"line": 6028, "reason": "invalid_timestamp", "raw": "2026-13-11T12:18:52.799Z WARN [order-service] Retrying request to payment-provider (attempt 2/3)"}
+{"line": 6042, "reason": "no_timestamp", "raw": "11/11/2026 12:19:15 INFO [payment-service] GET /v1/products/22330 200 114ms"}
+{"line": 6051, "reason": "no_timestamp", "raw": "2026-11-11T"}
+{"line": 6153, "reason": "missing_service", "raw": "2026-11-11T12:23:56.320Z ERROR [notification-service"}
+{"line": 6319, "reason": "missing_service", "raw": "2026-11-11T12:29:40.927Z DEBUG inventory-service Query took 21ms: SELECT * FROM products WHERE id = 16270"}
+{"line": 6415, "reason": "invalid_timestamp", "raw": "2026-13-11T12:33:07.766Z WARN [api-gateway] Deprecated API /v1/legacy called by client 86.110.166.168"}
+{"line": 6420, "reason": "missing_service", "raw": "2026-11-11T12:33:16.764Z INFO inventory-service GET /v1/products/87186 200 51ms"}
+{"line": 6445, "reason": "no_timestamp", "raw": "11/11/2026 12:34:05 INFO [api-gateway] Health check OK"}
+{"line": 6451, "reason": "missing_service", "raw": "2026-11-11T12:34:14.286Z INFO api-gateway POST /v1/cart 201 101ms"}
+{"line": 6465, "reason": "no_timestamp", "raw": "2026-11-11T"}
+{"line": 6480, "reason": "binary_garbage", "raw": "\ufffd\ufffd\ufffd\u03dc\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u03f5\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0292\ufffd\u065a\ufffd"}
+{"line": 6548, "reason": "missing_level", "raw": "2026-11-11T12:38:02.88"}
+{"line": 6646, "reason": "missing_service", "raw": "2026-11-11T12:41:36.454Z INFO ["}
+{"line": 6688, "reason": "no_timestamp", "raw": "11/11/2026 12:43:26 DEBUG [api-gateway] Query took 31ms: SELECT * FROM products WHERE id = 26894"}
+{"line": 6718, "reason": "unknown_level", "raw": "2026-11-11T12:44:20.590Z EROR [payment-service] Database connection timeout after 17691ms (host=db-3.internal, pool=primary)"}
+{"line": 6781, "reason": "unknown_level", "raw": "2026-11-11T12:46:37.353Z INF0 [notification-service] User 18577 logged in from 17.18.82.35"}
+{"line": 6971, "reason": "no_timestamp", "raw": "11/11/2026 12:53:11 INFO [order-service] POST /v1/cart 201 203ms"}
+{"line": 7079, "reason": "binary_garbage", "raw": "\ufffd\ufffd\u058a\ufffd\ufffd\ufffd\ufffd\ufffd\u00dd\ufffd\u06e3\ufffd\ufffd\u01be\ufffd\ufffd\ufffd\ufffd\u0418\u0734\ufffd\u71a2\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0111\ufffd\ufffd\ud985\udcc5\ufffd\ufffd\ufffd\ufffd\u0782\ufffd\ufffd\u01ac\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd"}
+{"line": 7124, "reason": "no_timestamp", "raw": "11/11/2026 12:58:46 DEBUG [notification-service] Cache lookup key=user:10971:profile hit=false"}
+{"line": 7139, "reason": "invalid_timestamp", "raw": "2026-13-11T12:59:26.758Z INFO [api-gateway] POST /v1/cart 201 203ms"}
+{"line": 7367, "reason": "missing_service", "raw": "2026-11-11T13:06:52.257Z INFO auth-service Health check OK"}
+{"line": 7466, "reason": "unknown_level", "raw": "2026-11-11T13:10:24.052Z INF0 [notification-service] Health check OK"}
+{"line": 7473, "reason": "no_timestamp", "raw": "2026-11-"}
+{"line": 7568, "reason": "binary_garbage", "raw": "\ufffd\ufffd\ufffd\u0716\ufffd\u0216\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0357\ufffd\ufffd\ufffd\u03d0\ufffd\ufffd\ufffd\u0245\u0248\u06b3\ufffd\ufffd\u025e\ufffd\ufffd\ufffd\u01e7\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u01ae\ufffd\ufffd\ufffd\ufffd\ufffd"}
+{"line": 7592, "reason": "invalid_timestamp", "raw": "2026-13-11T13:15:16.323Z INFO [inventory-service] POST /v1/cart 201 281ms"}
+{"line": 7601, "reason": "missing_level", "raw": "2026-11-11T13:15:32.97"}
+{"line": 7624, "reason": "missing_service", "raw": "2026-11-11T13:16:05.432Z WARN payment-service Deprecated API /v1/legacy called by client 112.182.154.53"}
+{"line": 7666, "reason": "binary_garbage", "raw": "\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u3c22\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ud874\ude2c\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd"}
+{"line": 7804, "reason": "missing_service", "raw": "2026-11-11T13:21:46.479Z INFO notification-service Order 02046c6e-1240-4ad5-8311-a3360d7653fe created (items=9, total=450.00 EUR)"}
+{"line": 7867, "reason": "no_timestamp", "raw": "11/11/2026 13:24:14 DEBUG [order-service] Cache lookup key=user:21533:profile hit=false"}
+{"line": 7896, "reason": "binary_garbage", "raw": "\ufffd\ufffd\ufffd\u00a7\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u032b\ufffd\u02fc\u0611\ufffd\ufffd\u07b9\ufffd\u062e\u038a\ufffd\ub7b3\ufffd\ufffd\u5834\u0586\ufffd\ufffd\ufffd\u0162\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd"}
+{"line": 7962, "reason": "unknown_level", "raw": "2026-11-11T13:27:52.722Z INF0 [auth-service] Order d4febcb2-d3b3-49ac-874c-d16e69dea439 created (items=3, total=248.00 EUR)"}
+{"line": 8175, "reason": "unknown_level", "raw": "2026-11-11T13:36:23.853Z IN"}
+{"line": 8198, "reason": "missing_service", "raw": "2026-11-11T13:37:18.306Z WARN [inv"}
+{"line": 8295, "reason": "invalid_timestamp", "raw": "2026-13-11T13:40:36.579Z WARN [payment-service] Slow query 2141ms on table orders"}
+{"line": 8325, "reason": "missing_service", "raw": "2026-11-11T13:41:29.265Z INFO"}
+{"line": 8349, "reason": "unknown_level", "raw": "2026-11-11T13:42:22.665Z IN"}
+{"line": 8374, "reason": "invalid_timestamp", "raw": "2026-13-11T13:43:20.386Z INFO [order-service] Order bdd427f3-2cea-4994-8219-ae92e8e67bc0 created (items=7, total=517.00 EUR)"}
+{"line": 8437, "reason": "unknown_level", "raw": "2026-11-11T13:45:53.226Z WARNN [order-service] Deprecated API /v1/legacy called by client 54.44.187.143"}
+{"line": 8542, "reason": "binary_garbage", "raw": "\ufffd\ufffd\ufffd\ufffd\u00aa\ufffd\u0401\ufffd\ufffd\ufffd\ufffd\ufffd\u03e5\ufffd\ud96e\udd62\ufffd\ufffd\ufffd\u05d4\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u023d\u073b\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0755\ufffd\u07b3\ufffd\ufffd\ufffd\u060b\ufffd\u0503\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u06e9\ufffd"}
+{"line": 8558, "reason": "invalid_timestamp", "raw": "2026-13-11T13:50:00.087Z INFO [api-gateway] Order 404c86f1-6cc2-420f-83a0-2289b88ba445 created (items=5, total=605.00 EUR)"}
+{"line": 8667, "reason": "missing_service", "raw": "2026-11-11T13:54:01.590Z INFO payment-service POST /v1/cart 201 126ms"}
+{"line": 8763, "reason": "unknown_level", "raw": "2026-11-11T13:57:41.076Z INF0 [api-gateway] GET /v1/products/23299 200 216ms"}
+{"line": 8768, "reason": "invalid_timestamp", "raw": "2026-13-11T13:57:53.646Z CRITICAL [inventory-service] Worker 12 killed: out of memory (rss=7928MB)"}
+{"line": 8775, "reason": "binary_garbage", "raw": "\udba4\udfb1\ufffd\u023d\ufffd\ufffd\u0456\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u4a9f\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u040e\ufffd\ufffd\u05c0\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd"}
+{"line": 8805, "reason": "missing_service", "raw": "2026-11-11T13:58:29.150Z DEBUG auth-service Cache lookup key=user:31917:profile hit=true"}
+{"line": 8856, "reason": "unknown_level", "raw": "2026-11-11T13:59:22.156Z DEB"}
+{"line": 9105, "reason": "no_timestamp", "raw": "11/11/2026 14:03:53 INFO [notification-service] Order 404f04e4-44b0-4797-9fe1-271fda3c3beb created (items=3, total=541.00 EUR)"}
+{"line": 9212, "reason": "invalid_timestamp", "raw": "2026-13-11T14:07:59.451Z INFO [notification-service] Order 4fc8d828-4f8d-46d6-b527-6a82ecebb138 created (items=5, total=822.00 EUR)"}
+{"line": 9267, "reason": "no_timestamp", "raw": "11/11/2026 14:09:46 INFO [api-gateway] POST /v1/cart 201 121ms"}
+{"line": 9331, "reason": "no_timestamp", "raw": "11/11/2026 14:12:01 INFO [inventory-service] Health check OK"}
+{"line": 9338, "reason": "no_timestamp", "raw": "2026-11-11T14:12"}
+{"line": 9447, "reason": "missing_service", "raw": "2026-11-11T14:16:59.423Z INFO payment-service POST /v1/cart 201 236ms"}
+{"line": 9463, "reason": "missing_service", "raw": "2026-11-11T14:17:38.536Z INFO payment-service User 36563 logged in from 76.103.186.244"}
+{"line": 9840, "reason": "unknown_level", "raw": "2026-11-11T14:32:28.078Z INF0 [notification-service] GET /v1/products/12189 200 24ms"}
+{"line": 9909, "reason": "binary_garbage", "raw": "\ufffd\u04ca\ufffd\ufffd\ufffd\ufffd\u02a2\ufffd\u812a\ufffd\ufffd\ufffd\u05c4\ufffd\ufffd\ufffd\ufffd\ufffd\u0224\u0751\ufffd\u07cb\ufffd\u0640\u00aa\u03fd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0417"}
+{"line": 9915, "reason": "missing_service", "raw": "2026-11-11T14:35:25.332Z INFO ["}
+{"line": 9962, "reason": "missing_service", "raw": "2026-11-11T14:37:23.242Z WARN order-service Slow query 1915ms on table orders"}
+{"line": 10029, "reason": "no_timestamp", "raw": "2026-11-11T14"}
+{"line": 10055, "reason": "binary_garbage", "raw": "\u5d19\ufffd\ufffd\u0645\u07c0\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ub97c\ufffd\ufffd"}
+{"line": 10146, "reason": "no_timestamp", "raw": "2026-11-11T14:4"}
+{"line": 10191, "reason": "invalid_timestamp", "raw": "2026-13-11T14:46:27.157Z WARN [order-service] Slow query 686ms on table orders"}
+{"line": 10235, "reason": "missing_service", "raw": "2026-11-11T14:48:00.964Z WARN api-gateway Deprecated API /v1/legacy called by client 171.216.236.180"}
+{"line": 10417, "reason": "invalid_timestamp", "raw": "2026-13-11T14:53:55.761Z INFO [payment-service] POST /v1/cart 201 110ms"}
+{"line": 10512, "reason": "binary_garbage", "raw": "\ufffd\ufffd\ufffd\ufffd\u0302\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u0709\ufffd\u042b\u431f\ufffd\ufffd\u32e7\ufffd\u590d\ufffd\ufffd\ufffd\u070d\ufffd\ufffd"}
+{"line": 10535, "reason": "missing_level", "raw": "2026-11-11T14:58:13.446Z "}

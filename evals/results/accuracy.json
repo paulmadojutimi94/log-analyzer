@@ -1,0 +1,27 @@
+{
+  "files": 50,
+  "lines": 531571,
+  "line_classification_accuracy": 1.0,
+  "entry_field_accuracy": 1.0,
+  "malformed_precision": 1.0,
+  "malformed_recall": 1.0,
+  "recovered": {
+    "json_line": "1268/1268",
+    "glued": "1223/1223",
+    "bad_byte_in_message": "1229/1229",
+    "crlf": "1259/1259"
+  },
+  "grouping_pair_precision": 1.0,
+  "grouping_pair_recall": 0.9723,
+  "grouping_pair_f1": 0.9859,
+  "groups_found_per_file": 14.3,
+  "true_templates_per_file": 12.0,
+  "spikes_planted": 150,
+  "spikes_found": 150,
+  "spike_recall": 1.0,
+  "spike_precision": 0.9677,
+  "false_alarms": 5,
+  "surge_false_alarms": 0,
+  "mean_detection_delay_minutes": 0.0,
+  "spike_attribution_accuracy": 1.0
+}

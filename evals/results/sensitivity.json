@@ -1,0 +1,13 @@
+{
+  "detection_rate_by_extra_errors_per_minute": {
+    "2": 0.006,
+    "4": 0.078,
+    "6": 0.488,
+    "8": 0.892,
+    "10": 1.0,
+    "12": 1.0,
+    "16": 1.0
+  },
+  "false_alarms_per_24h": 0.214,
+  "trials_per_size": 500
+}

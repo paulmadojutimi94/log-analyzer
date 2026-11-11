@@ -1,0 +1,40 @@
+{"id": "plain", "line": "2026-11-11T09:15:02.123Z ERROR [payment-service] Payment declined for user 48213", "want": "entry", "level": "ERROR", "service": "payment-service", "message": "Payment declined for user 48213"}
+{"id": "no_millis", "line": "2026-11-11T09:15:02Z INFO [api-gateway] GET / 200", "want": "entry", "level": "INFO"}
+{"id": "micros", "line": "2026-11-11T09:15:02.123456Z INFO [api-gateway] GET / 200", "want": "entry"}
+{"id": "lowercase_level", "line": "2026-11-11T09:15:02.123Z error [auth-service] bad token", "want": "entry", "level": "ERROR"}
+{"id": "warning_alias", "line": "2026-11-11T09:15:02.123Z WARNING [auth-service] slow", "want": "entry", "level": "WARN"}
+{"id": "fatal", "line": "2026-11-11T09:15:02.123Z FATAL [order-service] cannot start", "want": "entry", "level": "FATAL"}
+{"id": "two_spaces", "line": "2026-11-11T09:15:02.123Z  INFO  [api-gateway] spaced out", "want": "entry"}
+{"id": "empty_message", "line": "2026-11-11T09:15:02.123Z INFO [api-gateway]", "want": "entry", "message": ""}
+{"id": "trailing_space", "line": "2026-11-11T09:15:02.123Z INFO [api-gateway] hello   ", "want": "entry"}
+{"id": "unicode_message", "line": "2026-11-11T09:15:02.123Z INFO [notification-service] Sent “Bienvenue” to Zoë 🎉", "want": "entry"}
+{"id": "message_with_brackets", "line": "2026-11-11T09:15:02.123Z ERROR [order-service] [retry 2/3] [db] timeout", "want": "entry", "service": "order-service", "message": "[retry 2/3] [db] timeout"}
+{"id": "tab_separated", "line": "2026-11-11T09:15:02.123Z\tERROR\t[order-service]\ttimeout", "want": "entry"}
+{"id": "offset_timezone", "line": "2026-11-11T09:15:02.123+01:00 ERROR [order-service] timeout", "want": "entry"}
+{"id": "space_instead_of_T", "line": "2026-11-11 09:15:02.123Z ERROR [order-service] timeout", "want": "entry"}
+{"id": "comma_millis", "line": "2026-11-11 09:15:02,123 ERROR [order-service] timeout", "want": "entry"}
+{"id": "service_with_space", "line": "2026-11-11T09:15:02.123Z ERROR [order service] timeout", "want": "malformed"}
+{"id": "level_typo", "line": "2026-11-11T09:15:02.123Z EROR [order-service] timeout", "want": "malformed"}
+{"id": "month_13", "line": "2026-13-11T09:15:02.123Z ERROR [order-service] timeout", "want": "malformed"}
+{"id": "feb_30", "line": "2026-02-30T09:15:02.123Z ERROR [order-service] timeout", "want": "malformed"}
+{"id": "hour_25", "line": "2026-11-11T25:15:02.123Z ERROR [order-service] timeout", "want": "malformed"}
+{"id": "leap_day_ok", "line": "2028-02-29T09:15:02.123Z ERROR [order-service] timeout", "want": "entry"}
+{"id": "syslog", "line": "Nov 11 09:15:02 web-01 nginx[1234]: upstream timed out", "want": "malformed"}
+{"id": "apache_access", "line": "127.0.0.1 - - [11/Nov/2026:09:15:02 +0000] \"GET / HTTP/1.1\" 200 512", "want": "malformed"}
+{"id": "truncated_ts", "line": "2026-11-11T09:1", "want": "malformed"}
+{"id": "only_header", "line": "2026-11-11T09:15:02.123Z ERROR", "want": "malformed"}
+{"id": "json_full", "line": "{\"timestamp\": \"2026-11-11T09:15:02.123Z\", \"level\": \"error\", \"service\": \"auth-service\", \"msg\": \"bad token\"}", "want": "entry", "level": "ERROR", "service": "auth-service", "message": "bad token"}
+{"id": "json_missing_service", "line": "{\"timestamp\": \"2026-11-11T09:15:02.123Z\", \"level\": \"error\", \"msg\": \"bad token\"}", "want": "malformed"}
+{"id": "json_array", "line": "[1, 2, 3]", "want": "malformed"}
+{"id": "json_broken", "line": "{\"timestamp\": \"2026-11-11T09:15:02.123Z\", \"level\": ", "want": "malformed"}
+{"id": "json_level_number", "line": "{\"timestamp\": \"2026-11-11T09:15:02.123Z\", \"level\": 50, \"service\": \"api\", \"msg\": \"x\"}", "want": "malformed"}
+{"id": "glued_two", "line": "2026-11-11T09:15:02.123Z INFO [api-gateway] GET / 2002026-11-11T09:15:02.456Z ERROR [auth-service] bad token", "want": "entry", "entries": 2}
+{"id": "quoted_log_line", "line": "2026-11-11T09:15:02.123Z WARN [api-gateway] Rejected header value: '2026-11-11T09:00:00Z CRITICAL [auth-service] admin login'", "want": "entry", "entries": 1}
+{"id": "garbage", "line_hex": "c3289fa0a1fffe8081828384858687", "want": "malformed"}
+{"id": "one_bad_byte", "line_hex": "323032362d31312d31315430393a31353a30322e3132335a20494e464f205b6170692d676174657761795d2068656c6c6f20ff", "want": "entry"}
+{"id": "nul_bytes", "line_hex": "000000000000000000000000", "want": "malformed"}
+{"id": "ansi_in_message", "line": "2026-11-11T09:15:02.123Z INFO [api-gateway] \u001b[31mred\u001b[0m", "want": "entry"}
+{"id": "whitespace_only", "line": "   \t  ", "want": "blank"}
+{"id": "java_frame_first_line", "line": "    at com.shop.Foo.bar(Foo.java:10)", "want": "malformed"}
+{"id": "very_long_ok", "line_repeat": ["2026-11-11T09:15:02.123Z INFO [api-gateway] ", "x", 5000], "want": "entry"}
+{"id": "too_long", "line_repeat": ["2026-11-11T09:15:02.123Z INFO [api-gateway] ", "x", 20000], "want": "malformed"}

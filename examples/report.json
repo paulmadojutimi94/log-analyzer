@@ -1,0 +1,388 @@
+{
+  "source": "data/app.log",
+  "summary": {
+    "lines_read": 10581,
+    "entries": 9847,
+    "errors": 481,
+    "error_groups": 13,
+    "malformed_lines": 153,
+    "malformed_pct": 1.45,
+    "recovered": {
+      "glued": 28,
+      "json": 21
+    },
+    "bad_byte_entries": 30,
+    "continuation_lines": 580,
+    "blank_lines": 29,
+    "first_timestamp": "2026-11-11T09:00:00.605000+00:00",
+    "last_timestamp": "2026-11-11T14:59:56.816000+00:00",
+    "seconds": 0.0862
+  },
+  "levels": {
+    "INFO": 6194,
+    "WARN": 1646,
+    "DEBUG": 1526,
+    "ERROR": 453,
+    "CRITICAL": 28
+  },
+  "services": {
+    "order-service": 1734,
+    "notification-service": 1688,
+    "payment-service": 1648,
+    "inventory-service": 1635,
+    "auth-service": 1573,
+    "api-gateway": 1569
+  },
+  "top_error_groups": [
+    {
+      "fingerprint": "Database connection timeout after <NUM>ms (host=db-<NUM>.internal, pool=primary)",
+      "count": 136,
+      "services": {
+        "inventory-service": 51,
+        "order-service": 44,
+        "payment-service": 41
+      },
+      "levels": {
+        "ERROR": 136
+      },
+      "first_seen": "2026-11-11T09:03:53.894000+00:00",
+      "last_seen": "2026-11-11T14:59:41.590000+00:00",
+      "examples": [
+        "Database connection timeout after 16176ms (host=db-2.internal, pool=primary)",
+        "Database connection timeout after 27542ms (host=db-4.internal, pool=primary)",
+        "Database connection timeout after 16895ms (host=db-4.internal, pool=primary)"
+      ]
+    },
+    {
+      "fingerprint": "NullPointerException in OrderService.process(order_id=<UUID>)",
+      "count": 61,
+      "services": {
+        "order-service": 61
+      },
+      "levels": {
+        "ERROR": 61
+      },
+      "first_seen": "2026-11-11T09:04:16.647000+00:00",
+      "last_seen": "2026-11-11T14:47:01.677000+00:00",
+      "examples": [
+        "NullPointerException in OrderService.process(order_id=51c771da-49b3-4ce4-8b5a-5b7b8bb244fd)",
+        "NullPointerException in OrderService.process(order_id=2f11f76f-e88c-4fc4-b7c1-3c6589bb80f7)",
+        "NullPointerException in OrderService.process(order_id=686930e6-7510-44db-8944-73d780101459)"
+      ]
+    },
+    {
+      "fingerprint": "Rate limit exceeded for client <IP> (<NUM> req/min)",
+      "count": 42,
+      "services": {
+        "api-gateway": 42
+      },
+      "levels": {
+        "ERROR": 42
+      },
+      "first_seen": "2026-11-11T09:10:07.198000+00:00",
+      "last_seen": "2026-11-11T14:59:55.384000+00:00",
+      "examples": [
+        "Rate limit exceeded for client 100.209.232.119 (343 req/min)",
+        "Rate limit exceeded for client 69.36.96.39 (352 req/min)",
+        "Rate limit exceeded for client 229.82.138.169 (338 req/min)"
+      ]
+    },
+    {
+      "fingerprint": "Payment declined for user <NUM>: card expired (amount=<NUM> EUR)",
+      "count": 41,
+      "services": {
+        "payment-service": 41
+      },
+      "levels": {
+        "ERROR": 41
+      },
+      "first_seen": "2026-11-11T09:03:50.140000+00:00",
+      "last_seen": "2026-11-11T14:49:33.699000+00:00",
+      "examples": [
+        "Payment declined for user 70120: card expired (amount=25.50 EUR)",
+        "Payment declined for user 91528: card expired (amount=386.74 EUR)",
+        "Payment declined for user 48287: card expired (amount=399.65 EUR)"
+      ]
+    },
+    {
+      "fingerprint": "Upstream inventory-service returned HTTP <NUM> for GET /v<NUM>/stock/<NUM>",
+      "count": 41,
+      "services": {
+        "api-gateway": 22,
+        "order-service": 19
+      },
+      "levels": {
+        "ERROR": 41
+      },
+      "first_seen": "2026-11-11T09:12:13.721000+00:00",
+      "last_seen": "2026-11-11T14:41:32.419000+00:00",
+      "examples": [
+        "Upstream inventory-service returned HTTP 504 for GET /v1/stock/844758",
+        "Upstream inventory-service returned HTTP 503 for GET /v1/stock/358213",
+        "Upstream inventory-service returned HTTP 502 for GET /v1/stock/993780"
+      ]
+    },
+    {
+      "fingerprint": "Email to <EMAIL> bounced: mailbox full",
+      "count": 33,
+      "services": {
+        "notification-service": 33
+      },
+      "levels": {
+        "ERROR": 33
+      },
+      "first_seen": "2026-11-11T09:00:29.534000+00:00",
+      "last_seen": "2026-11-11T14:26:47.041000+00:00",
+      "examples": [
+        "Email to ana839@example.ie bounced: mailbox full",
+        "Email to ana847@mail.co.uk bounced: mailbox full",
+        "Email to ana725@example.ie bounced: mailbox full"
+      ]
+    },
+    {
+      "fingerprint": "Invalid JWT for session <HEX>: signature mismatch",
+      "count": 29,
+      "services": {
+        "auth-service": 29
+      },
+      "levels": {
+        "ERROR": 29
+      },
+      "first_seen": "2026-11-11T09:07:19.762000+00:00",
+      "last_seen": "2026-11-11T14:24:34.461000+00:00",
+      "examples": [
+        "Invalid JWT for session 264096263e00d86f263ff921a9f425c2: signature mismatch",
+        "Invalid JWT for session c827e7c09337bb3466e1608ea4282ec4: signature mismatch",
+        "Invalid JWT for session 7b943cdd28fbc2ddee56a6325d6975e4: signature mismatch"
+      ]
+    },
+    {
+      "fingerprint": "Order <UUID> stuck in state PENDING for <NUM>s",
+      "count": 27,
+      "services": {
+        "order-service": 27
+      },
+      "levels": {
+        "ERROR": 27
+      },
+      "first_seen": "2026-11-11T09:02:54.017000+00:00",
+      "last_seen": "2026-11-11T14:59:56.816000+00:00",
+      "examples": [
+        "Order ee9ed00d-26f9-466e-9575-9b7915d2c8a1 stuck in state PENDING for 2013s",
+        "Order d7c957f4-c1f8-45f0-ab71-d86758f93c7d stuck in state PENDING for 2899s",
+        "Order 2c415f60-b3c5-43ba-bc9d-ea9702759964 stuck in state PENDING for 2686s"
+      ]
+    },
+    {
+      "fingerprint": "Consumer group billing lagging by <NUM> messages on topic orders.v<NUM> partition <NUM>",
+      "count": 18,
+      "services": {
+        "inventory-service": 18
+      },
+      "levels": {
+        "ERROR": 18
+      },
+      "first_seen": "2026-11-11T09:11:43.939000+00:00",
+      "last_seen": "2026-11-11T14:49:04.837000+00:00",
+      "examples": [
+        "Consumer group billing lagging by 868914 messages on topic orders.v2 partition 4",
+        "Consumer group billing lagging by 495725 messages on topic orders.v2 partition 7",
+        "Consumer group billing lagging by 627005 messages on topic orders.v2 partition 10"
+      ]
+    },
+    {
+      "fingerprint": "Worker <NUM> killed: out of memory (rss=<NUM>MB)",
+      "count": 17,
+      "services": {
+        "order-service": 9,
+        "inventory-service": 8
+      },
+      "levels": {
+        "CRITICAL": 17
+      },
+      "first_seen": "2026-11-11T09:30:05.519000+00:00",
+      "last_seen": "2026-11-11T14:35:17.805000+00:00",
+      "examples": [
+        "Worker 13 killed: out of memory (rss=3533MB)",
+        "Worker 3 killed: out of memory (rss=5640MB)",
+        "Worker 5 killed: out of memory (rss=5527MB)"
+      ]
+    }
+  ],
+  "spikes": [
+    {
+      "start": "2026-11-11 12:00",
+      "end": "2026-11-11 12:01",
+      "minutes": 2,
+      "peak_errors_per_minute": 12,
+      "total_errors": 22,
+      "normal_errors_per_minute": 1.28,
+      "top_groups": [
+        {
+          "fingerprint": "NullPointerException in OrderService.process(order_id=<UUID>)",
+          "count": 21
+        },
+        {
+          "fingerprint": "Order <UUID> stuck in state PENDING for <NUM>s",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "start": "2026-11-11 13:16",
+      "end": "2026-11-11 13:16",
+      "minutes": 1,
+      "peak_errors_per_minute": 11,
+      "total_errors": 11,
+      "normal_errors_per_minute": 0.79,
+      "top_groups": [
+        {
+          "fingerprint": "Database connection timeout after <NUM>ms (host=db-<NUM>.internal, pool=primary)",
+          "count": 9
+        },
+        {
+          "fingerprint": "Order <UUID> stuck in state PENDING for <NUM>s",
+          "count": 1
+        },
+        {
+          "fingerprint": "Upstream inventory-service returned HTTP <NUM> for GET /v<NUM>/stock/<NUM>",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "start": "2026-11-11 13:58",
+      "end": "2026-11-11 14:02",
+      "minutes": 5,
+      "peak_errors_per_minute": 18,
+      "total_errors": 84,
+      "normal_errors_per_minute": 1.44,
+      "top_groups": [
+        {
+          "fingerprint": "Database connection timeout after <NUM>ms (host=db-<NUM>.internal, pool=primary)",
+          "count": 80
+        },
+        {
+          "fingerprint": "NullPointerException in OrderService.process(order_id=<UUID>)",
+          "count": 2
+        },
+        {
+          "fingerprint": "Order <UUID> stuck in state PENDING for <NUM>s",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "malformed": {
+    "by_reason": {
+      "missing_service": 39,
+      "unknown_level": 31,
+      "no_timestamp": 29,
+      "binary_garbage": 25,
+      "invalid_timestamp": 23,
+      "missing_level": 6
+    },
+    "samples": [
+      {
+        "line": 70,
+        "reason": "invalid_timestamp",
+        "raw": "2026-13-11T09:02:56.552Z INFO [order-service] Order 3338ec24-9a6a-46a0-8a8f-fd65aed80127 created (items=7, total=407.00 EUR)"
+      },
+      {
+        "line": 152,
+        "reason": "no_timestamp",
+        "raw": "11/11/2026 09:06:03 INFO [auth-service] POST /v1/cart 201 174ms"
+      },
+      {
+        "line": 156,
+        "reason": "missing_service",
+        "raw": "2026-11-11T09:06:32.539Z WARN order-service Slow query 2128ms on table orders"
+      },
+      {
+        "line": 169,
+        "reason": "unknown_level",
+        "raw": "2026-11-11T09:07:15.075Z INF0 [auth-service] User 13008 logged in from 142.150.82.196"
+      },
+      {
+        "line": 170,
+        "reason": "missing_service",
+        "raw": "2026-11-11T09:07:16.988Z INFO [i"
+      },
+      {
+        "line": 197,
+        "reason": "missing_service",
+        "raw": "2026-11-11T09:08:18.297Z DEBUG api-gateway Cache lookup key=user:17589:profile hit=true"
+      },
+      {
+        "line": 228,
+        "reason": "invalid_timestamp",
+        "raw": "2026-13-11T09:09:47.870Z INFO [inventory-service] User 83249 logged in from 241.226.8.59"
+      },
+      {
+        "line": 311,
+        "reason": "binary_garbage",
+        "raw": "ْ��̕�Ä�鴇������Պ�"
+      },
+      {
+        "line": 359,
+        "reason": "missing_service",
+        "raw": "2026-11-11T09:14:45.796Z INFO notification-service POST /v1/cart 201 44ms"
+      },
+      {
+        "line": 382,
+        "reason": "unknown_level",
+        "raw": "2026-11-11T09:15:47.731Z INF0 [notification-service] User 61494 logged in from 234.17.61.66"
+      },
+      {
+        "line": 415,
+        "reason": "unknown_level",
+        "raw": "2026-11-11T09:16:43.173Z INF0 [auth-service] User 38893 logged in from 159.155.147.193"
+      },
+      {
+        "line": 416,
+        "reason": "unknown_level",
+        "raw": "2026-11-11T09:16:44.486Z INF0 [api-gateway] GET /v1/products/35360 200 138ms"
+      },
+      {
+        "line": 443,
+        "reason": "binary_garbage",
+        "raw": "����ؾ�������ӓ������Ԝ��������������������ۺɁ������㌗��å"
+      },
+      {
+        "line": 538,
+        "reason": "unknown_level",
+        "raw": "2026-11-11T09:21:32.961Z INF0 [order-service] GET /v1/products/84597 200 123ms"
+      },
+      {
+        "line": 553,
+        "reason": "no_timestamp",
+        "raw": "11/11/2026 09:22:15 INFO [api-gateway] Order 59e6f700-911a-4f39-8561-89d86734086c created (items=2, total=277.00 EUR)"
+      },
+      {
+        "line": 756,
+        "reason": "no_timestamp",
+        "raw": "11/11/2026 09:29:42 INFO [payment-service] POST /v1/cart 201 36ms"
+      },
+      {
+        "line": 974,
+        "reason": "missing_service",
+        "raw": "2026-11-11T09:37:12.560Z INFO [auth-"
+      },
+      {
+        "line": 985,
+        "reason": "unknown_level",
+        "raw": "2026-11-11T09:37:28.727Z INF"
+      },
+      {
+        "line": 1140,
+        "reason": "missing_service",
+        "raw": "2026-11-11T09:42:48.157Z INFO [notifi"
+      },
+      {
+        "line": 1250,
+        "reason": "invalid_timestamp",
+        "raw": "2026-13-11T09:46:23.001Z INFO [order-service] User 71446 logged in from 25.197.85.65"
+      }
+    ]
+  }
+}

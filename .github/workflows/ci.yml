@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install pytest ruff
+      - name: Lint
+        run: ruff check . && ruff format --check .
+      - name: Tests
+        run: python -m pytest -q
+      - name: Re-measure accuracy, gold set and attacks
+        run: python evals/run_all.py --fast
+      - name: README numbers must match what was just measured
+        run: git diff --exit-code README.md
+      - name: Demo runs end to end
+        run: make demo

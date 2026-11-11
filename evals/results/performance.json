@@ -1,0 +1,24 @@
+{
+  "machine": "Linux x86_64, 2 CPUs, Python 3.13.18",
+  "parse_only_10k": {
+    "p50_ms": 56.9,
+    "p95_ms": 74.8,
+    "runs": 50
+  },
+  "analyse_and_report_10k": {
+    "p50_ms": 75.5,
+    "p95_ms": 76.3,
+    "runs": 50
+  },
+  "cli_end_to_end_10k": {
+    "p50_ms": 142.0,
+    "p95_ms": 159.9,
+    "runs": 20
+  },
+  "throughput_lines_per_s": 137361,
+  "big_file_lines": 209622,
+  "peak_memory_mb_10k": 0.11,
+  "peak_memory_mb_200k": 1.42,
+  "cost_per_run_eur": 0.0,
+  "paid_api_calls": 0
+}
