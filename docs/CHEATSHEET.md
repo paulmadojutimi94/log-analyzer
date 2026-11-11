@@ -33,6 +33,7 @@ class Entry:
 - `field(default_factory=list)`: every Entry gets its *own* new list. Writing `= []` would share one list between all instances, a classic Python bug, which is why dataclasses forbid it.
 
 ```python
+# inside class Entry
 @property
 def is_error(self) -> bool:
     return self.level in ERROR_LEVELS
@@ -52,19 +53,21 @@ class Continuation:
     text: str
 
 
+@dataclass(slots=True)
 class Blank:
     line_no: int
 
 
+@dataclass(slots=True)
 class Malformed:
     line_no: int
     reason: str
-    raw: str
+    raw: str  # decoded, possibly cut short; never trusted for display
 
 
 Parsed = Entry | Continuation | Blank | Malformed
 ```
-- Three more tiny result types (shown compressed here). `Malformed.reason` is what makes the "malformed lines" report useful: *why*, not just *how many*.
+- Three more tiny result types. `Malformed.reason` is what makes the "malformed lines" report useful: *why*, not just *how many*.
 - `Parsed` is a **type alias** for "any of the four" (the `|` union syntax is Python 3.10+).
 
 ---
@@ -606,6 +609,7 @@ class Analysis:
 - The whole result is **counters, not entries**: that's why memory doesn't grow with file size. `totals` and `errors` map epoch-minute → count; they feed the spike detector.
 
 ```python
+# inside class Analysis
 @property
 def malformed_total(self) -> int:
     return sum(self.malformed.values())
@@ -763,7 +767,7 @@ def sparkline(counts):
 
 **`to_dict(a, top)`** builds one plain dictionary of everything: summary numbers, levels, services, the top N groups, spikes and malformed samples. Datetimes become strings with `.isoformat()`. **All three renderers read from it**, so Markdown, JSON and HTML can never disagree. `round(100 * x / y, 2) if y else 0.0` avoids dividing by zero on an empty file.
 
-**`render_json`** is `json.dumps(to_dict(...), indent=2, ensure_ascii=False)`. JSON needs no extra escaping, because `json.dumps` escapes control characters and quotes itself. `ensure_ascii=False` keeps `Zoë` readable instead of `Zoë`.
+**`render_json`** is `json.dumps(to_dict(...), indent=2, ensure_ascii=False)`. JSON needs no extra escaping, because `json.dumps` escapes control characters and quotes itself. `ensure_ascii=False` keeps `Zoë` readable instead of `Zo\u00eb`.
 
 **`render_markdown` and `render_html`** follow one pattern:
 ```python
@@ -834,4 +838,4 @@ return "\n".join(out) + "\n"
 
 **"How would you scale it?"** Logs are append-only and the state is counters, so it shards naturally: per-file or per-hour workers produce counters, and you merge them (Counters add). Spike detection runs on the merged minute series. For live use, keep the last 30 minutes of counters in memory and evaluate each minute as it closes.
 
-**"What would you do differently?"** Learn variable words from the data (Drain), test on a week of real logs before tuning anything further, and add a non-ASCII check to CI after finding invisible characters in my own source.
+**"What would you do differently?"** Learn variable words from the data (Drain), test on a week of real logs before tuning anything further, and put the invisible-character check in CI from day one instead of after finding them in my own source.
